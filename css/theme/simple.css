@@ -5,8 +5,8 @@
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -15,7 +15,7 @@ body {
   background-color: #24A685; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #EDF0EA; }
@@ -41,7 +41,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #000;
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -288,3 +288,21 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.rounded{
+    border-radius: 1500px; }
+
+.green{
+    color: #24A685; }
+
+.white{
+    color: #24A685; }
+
+.spin{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;    
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
