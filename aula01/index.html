@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Curso Asyncio - Aula 00</title>
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#F23C5A">
+                    <h1>asyncio</h1>
+                    <h3>01 - Iterators e Generators</h3>
+                </section>
+                <section>
+                    <h2>Carlos Maniero</h2>
+                    <img src="https://avatars0.githubusercontent.com/u/2002011?v=3&s=200" alt="" class="rounded">
+                    <p class="fragment">Desenvolvedor Python</p>
+                    <!-- Place this tag where you want the button to render. -->
+                    <div id="github" class="fragment">
+                        <a aria-label="Star carlosmaniero/curso-asyncio on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/carlosmaniero/curso-asyncio#stargazers_count" data-count-href="/carlosmaniero/curso-asyncio/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/carlosmaniero/curso-asyncio" class="github-button">Star</a>
+                        <a aria-label="Follow @carlosmaniero on GitHub" data-count-aria-label="# followers on GitHub" data-count-api="/users/carlosmaniero#followers" data-count-href="/carlosmaniero/followers" data-style="mega" href="https://github.com/carlosmaniero" class="github-button">Follow @carlosmaniero</a>
+                    </div>
+                </section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
